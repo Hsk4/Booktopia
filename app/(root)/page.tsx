@@ -9,8 +9,7 @@ export default function Page() {
 
             <section className="library-books-grid" aria-label="Your books">
                 {Books.map((book) => (
-                    
-                    <BookCard key={book._id} title={book.title} author={book.author} coverURL={book.coverURL} slug={book.slug} />
+                    <BookCard key={book._id} title={book.title} author={book.author} coverURL={book.coverURL} />
                 ))}
             </section>
         </main>
